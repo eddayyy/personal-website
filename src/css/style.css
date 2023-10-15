@@ -105,19 +105,22 @@ nav h4:hover {
 }
 
 /*------------ Picture Container ------------*/
+
+
 .picture-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 150px;
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
     z-index: 2;
 }
 
+
 .picture-container img {
-    justify-content: center;
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: auto;
 }
 
 /*------------ Introduction Container ------------*/
