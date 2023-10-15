@@ -7,38 +7,74 @@
     <title>Eduardo's Portfolio</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/main.js" defer></script>
+    <script src="../../assets/data/particles.js/particles.js"></script>
 </head>
 
 <body>
-    <!-- ParticlesJS Section -->
-    <div id="particles-js">
-        <script src="../../assets/data/particles.js/particles.js"></script>
-    </div>
+    <!-- Nav Bar -->
+    <nav class="navbar-container" id="navbar"></nav>
+
+    <header id="home">
+        <!-- Picture -->
+        <div class="picture-container">
+            <img src="../../assets/media/headshot.jpeg" alt="profile-picture">
+        </div>
+
+        <!-- ParticlesJS Section -->
+        <div id="particles-js"></div>
+
+        <!-- Introduction Content -->
+        <p class="intro-text">
+
+            Hello, I'm Eduardo. I'm a Computer Science student at California State
+            University Fullerton.
+            I'm currently a
+            Research Assistant with the department of Computer Science. I spend most of my time exploring new
+            technologies and developing my current skills.</p>
+    </header>
+
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here are some of my projects:</p>
+        <!-- List your projects here -->
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>These are some of the skills I've acquired:</p>
+        <!-- List your skills here -->
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>Here's a brief overview of my work experience:</p>
+        <!-- Detail your experience here -->
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <p>I'm a Computer Science student at California State University Fullerton.</p>
+        <!-- Add more about your education background here -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to <a href="mailto:eduardo@example.com">email me</a>.</p>
+        <!-- You can add a contact form or other contact methods here -->
+    </section>
 
     <script>
         particlesJS.load('particles-js', '../../assets/data/particles.js/particles.json', function () {
             console.log('particles.js loaded - callback');
         });
     </script>
-
-    <!-- Nav Bar -->
-    <nav class="navbar-container" id="navbar">
-
-
-    </nav>
-
-    <!-- Picture -->
-    <div class="picture-container">
-        <img src="../../assets/media/headshot.jpeg" alt="profile-picture">
-    </div>
-
-    <!-- Introduction -->
-    <div class="introduction-container">
-        <pre>
-            {{introduction}}
-        </pre>
-    </div>
-
 </body>
 
 </html>

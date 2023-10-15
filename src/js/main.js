@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
     const header = [
-        { name: 'Home', link: '/home' },
-        { name: 'Projects', link: '/projects' },
-        { name: 'Skills', link: '/skills' },
-        { name: 'Experience', link: '/experience' },
-        { name: 'Education', link: '/education' },
-        { name: 'Contact', link: '/contact' }
+        { name: 'Home', link: '#home' },
+        { name: 'Projects', link: '#projects' },
+        { name: 'Skills', link: '#skills' },
+        { name: 'Experience', link: '#experience' },
+        { name: 'Education', link: '#education' },
+        { name: 'Contact', link: '#contact' }
     ];
 
     const navbar = document.getElementById('navbar');
@@ -21,3 +21,5 @@ document.addEventListener('DOMContentLoaded', function () {
         navbar.appendChild(h4);
     });
 });
+
+
