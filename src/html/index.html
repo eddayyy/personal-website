@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo's Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js" defer></script>
+</head>
+
+<body>
+    <!-- ParticlesJS Section -->
+    <div id="particles-js">
+        <script src="../../assets/data/particles.js/particles.js"></script>
+    </div>
+
+    <script>
+        particlesJS.load('particles-js', '../../assets/data/particles.js/particles.json', function () {
+            console.log('particles.js loaded - callback');
+        });
+    </script>
+
+    <!-- Nav Bar -->
+    <nav class="navbar-container" id="navbar">
+
+
+    </nav>
+
+    <!-- Picture -->
+    <div class="picture-container">
+        <img src="../../assets/media/headshot.jpeg" alt="profile-picture">
+    </div>
+
+    <!-- Introduction -->
+    <div class="introduction-container">
+        <pre>
+            {{introduction}}
+        </pre>
+    </div>
+
+</body>
+
+</html>
