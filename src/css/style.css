@@ -1,331 +1,299 @@
-    /*------------ Universal Styles ------------*/
-    * {
-        font-family: "Nunito", sans-serif;
-        box-sizing: border-box;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/*------------ Universal Styles ------------*/
+* {
+    font-family: "Nunito", sans-serif;
+    box-sizing: border-box;
+}
+
+header,
+section {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+p {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+/*-------------------------------------------- HOME SECTION --------------------------------------------*/
+
+/*------------ Particles Container ------------*/
+@keyframes changeBackgroundColor {
+    0% {
+        background-color: #181936;
     }
 
-    header,
-    section {
-        min-height: 100vh;
-        padding: 40px 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        transition: background-color 0.3s;
+    25% {
+        background-color: #1e1b56;
     }
 
-    html {
-        margin: 0;
-        padding: 0;
+    50% {
+        background-color: #1b3856;
     }
 
-    body {
-        max-width: 1200px;
-        padding: 0;
-        margin: 0 auto;
+    75% {
+        background-color: #1b3d56;
     }
 
-    p {
-        font-size: 14px;
-        text-align: center;
-        padding-top: 60px;
+    100% {
+        background-color: #1b2756;
     }
+}
 
-    /* Universal Mobile Styles */
-    @media only screen and (max-width: 768px) {
+#particles-js {
+    z-index: 0;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden;
+    animation: changeBackgroundColor 20s infinite;
+}
 
-        /* Enlarging Font sizes for better readability */
-        p {
-            font-size: 16px;
-        }
+/*------------ Nav Bar Container ------------*/
+.active-link {
+    background-color: #fffafa;
+    color: #000000;
+}
 
-        .intro-text {
-            font-size: 26px;
-        }
+nav {
+    z-index: 5;
+    position: fixed;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    width: 65%;
+    padding: 5px 15px;
+    background-color: rgba(200, 200, 200, 0.95);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
 
-        /* Updating Navbar for mobile screens */
-        nav {
-            flex-direction: column;
-            align-items: center;
-        }
+nav>div {
+    display: flex;
+    justify-content: space-between;
+}
 
-        nav h4,
-        nav a {
-            margin: 10px 0;
-        }
+nav h4,
+nav a {
+    border-radius: 10px;
+    color: #646161;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
 
-        /* Updating profile picture size */
-        .picture-container {
-            width: 120px;
-            height: 120px;
-        }
+nav a:hover,
+nav h4:hover {
+    color: #000000;
+}
 
-        /* Project Section Adjustments */
-        .gradebook-project {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .gradebook-description,
-        .gradebook-image {
-            max-width: 100%;
-            margin-bottom: 15px;
-        }
-
-        /* Adjusting social icons for better touch */
-        .social-icons a {
-            font-size: 70px;
-            height: 70px;
-            width: 70px;
-            margin: 0 15px;
-            /* spacing out the icons a bit */
-        }
-    }
-
-    /* Only for even smaller screens like 375px width (typical iPhone) */
-    @media only screen and (max-width: 400px) {
-        .intro-text {
-            font-size: 22px;
-        }
-
-        .picture-container {
-            width: 100px;
-            height: 100px;
-        }
-
-        .social-icons a {
-            font-size: 60px;
-            height: 60px;
-            width: 60px;
-        }
-    }
-
-    /*-------------------------------------------- HOME SECTION --------------------------------------------*/
-
-    /*------------ Particles Container ------------*/
-    @keyframes changeBackgroundColor {
-        0% {
-            background-color: #181936;
-        }
-
-        25% {
-            background-color: #1e1b56;
-        }
-
-        50% {
-            background-color: #1b3856;
-        }
-
-        75% {
-            background-color: #1b3d56;
-        }
-
-        100% {
-            background-color: #1b4f56;
-        }
-    }
-
-    #particles-js {
-        position: fixed;
-        z-index: 0;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #b61924;
-        animation: changeBackgroundColor 20s infinite;
-    }
-
-    /*------------ Nav Bar Container ------------*/
-    .active-link {
-        background-color: #fffafa;
-        color: #000000;
-    }
-
+@media only screen and (max-width: 768px) {
     nav {
-        z-index: 5;
-        position: fixed;
-        left: 50%;
-        top: 10px;
-        transform: translateX(-50%);
-        width: 65%;
-        padding: 5px 15px;
-        background-color: rgba(200, 200, 200, 0.95);
-        border-radius: 20px;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    nav>div {
-        display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
     }
 
     nav h4,
     nav a {
-        margin: 0 5px;
-        padding: 5px 10px;
-        border-radius: 10px;
-        color: #646161;
-        text-decoration: none;
-        transition: background-color 0.3s, color 0.3s;
+        margin: 5px 0;
     }
-
-    nav a:hover,
-    nav h4:hover {
-        color: #000000;
-    }
-
-    @media only screen and (max-width: 768px) {
-        nav {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        nav h4,
-        nav a {
-            margin: 5px 0;
-        }
-    }
+}
 
 
-    /*------------ Picture Container ------------*/
+/*------------ Picture Container ------------*/
+.picture-container {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: 2;
+}
 
 
+.picture-container img {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
     .picture-container {
-        display: inline-block;
-        position: relative;
-        width: 100px;
-        height: 100px;
-        overflow: hidden;
-        border-radius: 50%;
-        z-index: 2;
+        width: 80px;
+        height: 80px;
     }
+}
 
+/*------------ Introduction Container ------------*/
+.intro-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 15px;
+    z-index: 2;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 800px;
+    margin-top: 20px;
+}
 
-    .picture-container img {
-        width: 100%;
-        height: auto;
-        justify-content: center;
-    }
-
-    @media only screen and (max-width: 500px) {
-        .picture-container {
-            width: 80px;
-            height: 80px;
-        }
-    }
-
-    /*------------ Introduction Container ------------*/
+@media only screen and (max-width: 768px) {
     .intro-text {
-        font-size: 30px;
-        font-weight: bold;
-        color: #fff;
-        justify-content: center;
-        margin: 0 auto;
-        border-radius: 15px;
-        padding: 15px;
-        z-index: 2;
-        line-height: 1.5;
-        text-align: center;
-        max-width: 800px;
-        margin-top: 20px;
+        font-size: 24px;
     }
 
-    @media only screen and (max-width: 768px) {
-        .intro-text {
-            font-size: 24px;
-        }
-
-        p {
-            font-size: 12px;
-        }
+    p {
+        font-size: 12px;
     }
+}
 
-    /*------------ Socials Container ------------*/
-    .social-icons {
-        z-index: 3;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
+/*------------ Socials Container ------------*/
+.social-icons {
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 
+.social-icons a {
+    font-size: 60px;
+    height: 60px;
+    width: 100%;
+}
+
+/* style.css */
+
+.github:hover,
+.github:focus,
+.github:active,
+.linkedin:hover,
+.linkedin:focus,
+.linkedin:active {
+    transform: scale(1.05);
+    /* scale-105 equivalent in Tailwind */
+}
+
+.github,
+.linkedin {
+    background-color: #2d3748;
+    /* bg-gray-950 equivalent in Tailwind */
+    color: white;
+    /* text-white equivalent in Tailwind */
+    padding: 1rem 1.75rem;
+    /* px-7 py-3 equivalent in Tailwind */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* gap-2 equivalent in Tailwind */
+    border-radius: 9999px;
+    /* rounded-full equivalent in Tailwind */
+    outline: none;
+    transition: transform 0.3s ease;
+    /* transition for the scale effect */
+    border: 2px solid white;
+    /* border-2 border-white equivalent in Tailwind */
+    border-opacity: 0.4;
+    /* border-opacity-40 equivalent in Tailwind */
+}
+
+@media only screen and (max-width: 768px) {
     .social-icons a {
         font-size: 60px;
         height: 60px;
         width: 60px;
     }
+}
 
-    @media only screen and (max-width: 768px) {
-        .social-icons a {
-            font-size: 60px;
-            height: 60px;
-            width: 60px;
-        }
-    }
+/*-------------------------------------------- PROJECTS SECTION --------------------------------------------*/
 
-    /*-------------------------------------------- PROJECTS SECTION --------------------------------------------*/
+#projects {
+    background-color: #d5d5d5;
+}
 
-    #projects {
-        background-color: #d5d5d5;
+.gradebook-project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.gradebook-description {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.gradebook-image {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.gradebook-image img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .project {
+        flex-direction: column;
     }
 
     .gradebook-project {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .gradebook-description {
-        flex: 1;
-        padding-right: 20px;
-    }
-
-    .gradebook-image {
-        max-width: 300px;
-        border-radius: 10px;
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 15px;
     }
 
     .gradebook-image img {
-        width: 100%;
-        height: auto;
+        max-width: 100%;
     }
+}
 
-    @media only screen and (max-width: 768px) {
-        .project {
-            flex-direction: column;
-        }
+/*-------------------------------------------- SKILLS SECTION --------------------------------------------*/
+#skills {
+    background-color: #bbb;
+    width: 100%;
+}
 
-        .gradebook-project {
-            padding-right: 0;
-            text-align: center;
-            margin-bottom: 15px;
-        }
+/*-------------------------------------------- EXPERIENCE SECTION --------------------------------------------*/
+#experience {
+    background-color: #a5a5a5;
+}
 
-        .gradebook-image img {
-            max-width: 100%;
-        }
-    }
+/*-------------------------------------------- EDUCATION SECTION --------------------------------------------*/
+#education {
+    background-color: #8a8a8a;
+}
 
-    /*-------------------------------------------- SKILLS SECTION --------------------------------------------*/
-    #skills {
-        background-color: #bbb;
-    }
-
-    /*-------------------------------------------- EXPERIENCE SECTION --------------------------------------------*/
-    #experience {
-        background-color: #a5a5a5;
-    }
-
-    /*-------------------------------------------- EDUCATION SECTION --------------------------------------------*/
-    #education {
-        background-color: #8a8a8a;
-    }
-
-    /*-------------------------------------------- CONTACT SECTION --------------------------------------------*/
-    #contact {
-        background-color: #6a6a6a;
-    }
+/*-------------------------------------------- CONTACT SECTION --------------------------------------------*/
+#contact {
+    background-color: #6a6a6a;
+}

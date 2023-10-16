@@ -63,10 +63,5 @@ function adjustParticlesHeight() {
     particlesContainer.style.height = `${headerHeight}px`;
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    adjustParticlesHeight();
-});
-
-window.addEventListener('resize', function () {
-    adjustParticlesHeight();
-});
+window.addEventListener('resize', adjustParticlesHeight);
+window.addEventListener('load', adjustParticlesHeight);
