@@ -228,9 +228,7 @@
         .project-info {
             padding-right: 0;
             text-align: center;
-            /* Center the text on small screens */
             margin-bottom: 15px;
-            /* Creates some space between the text and the image on small screens */
         }
 
         .project-image img {
