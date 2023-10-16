@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eduardo's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="../js/main.js" defer></script>
     <script src="../../assets/data/particles.js/particles.js"></script>
 </head>
@@ -14,32 +18,48 @@
     <!-- Nav Bar -->
     <nav class="navbar-container" id="navbar"></nav>
 
+    <!-- Home Section -->
     <header id="home">
         <!-- Picture -->
         <div class="picture-container">
+
             <img src="../../assets/media/headshot.jpeg" alt="profile-picture">
         </div>
 
-        <!-- ParticlesJS Section -->
+        <!-- ParticlesJS -->
         <div id="particles-js"></div>
 
-        <!-- Introduction Content -->
+        <!-- Introduction -->
         <p class="intro-text">
+            Hello, I'm Eduardo. I'm a Computer Science student at CSUF.
+            I'm currently a Research Assistant with the department of Computer Science. I spend most of my time
+            exploring
+            new technologies and developing my current skills.
+        </p>
 
-            Hello, I'm Eduardo. I'm a Computer Science student at California State
-            University Fullerton.
-            I'm currently a
-            Research Assistant with the department of Computer Science. I spend most of my time exploring new
-            technologies and developing my current skills.</p>
+        <!-- Socials -->
+        <div class="social-icons">
+            <a href="https://github.com/eddayyy" target="_blank" rel="noopener noreferrer">
+                <iconify-icon icon="icon-park:github" id="github"></iconify-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/eduardong" target="_blank" rel="noopener noreferrer">
+                <iconify-icon icon="skill-icons:linkedin" id="linkedin"></iconify-icon>
+            </a>
+        </div>
+        </div>
     </header>
-
-
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2>Projects</h2>
-        <p>Here are some of my projects:</p>
-        <!-- List your projects here -->
+        <h2>My Projects</h2>
+        <div class="project">
+            <div class="project-info">
+                <h3>GradeBook GUI Application</h3>
+            </div>
+            <div class="project-image">
+                <img src="../../assets/media/GradeBook.png" alt="Demo Image">
+            </div>
+        </div>
     </section>
 
     <!-- Skills Section -->

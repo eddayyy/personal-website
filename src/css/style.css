@@ -1,157 +1,259 @@
-/*------------ Universal Styles ------------*/
-* {
-    font-family: Helvetica;
-    box-sizing: border-box;
-}
+    /*------------ Universal Styles ------------*/
+    * {
+        font-family: "Nunito", sans-serif;
+        box-sizing: border-box;
+    }
 
-body,
-html {
-    margin: 0;
-    padding: 0;
-}
-
-p {
-    font-size: 14px;
-    text-align: center;
-    padding-top: 60px;
-}
-
-/*------------ Header Styles ------------*/
-header,
-section {
-    min-height: 100vh;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transition: background-color 0.3s;
-}
-
-/*------------ Nav Bar Container ------------*/
-nav {
-    z-index: 1;
-    position: fixed;
-    left: 50%;
-    top: 10px;
-    transform: translateX(-50%);
-    width: 65%;
-    padding: 5px 15px;
-    background-color: rgba(200, 200, 200, 0.95);
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav>div {
-    display: flex;
-    justify-content: space-between;
-}
-
-nav h4,
-nav a {
-    margin: 0 5px;
-    padding: 5px 10px;
-    border-radius: 10px;
-    color: #646161;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-nav a:hover,
-nav h4:hover {
-    color: #000000;
-}
-
-@media only screen and (max-width: 600px) {
-    nav {
+    header,
+    section {
+        min-height: 100vh;
+        padding: 40px 20px;
+        display: flex;
         flex-direction: column;
-    }
-}
-
-/*------------ Particles Container ------------*/
-@keyframes changeBackgroundColor {
-    0% {
-        background-color: #121826;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: background-color 0.3s;
     }
 
-    25% {
-        background-color: #FF4500;
+    html {
+        margin: 0;
+        padding: 0;
     }
 
-    50% {
-        background-color: #47d247;
+    body {
+        max-width: 1200px;
+        padding: 0;
+        margin: 0 auto;
     }
 
-    75% {
-        background-color: #e590e5;
+    p {
+        font-size: 14px;
+        text-align: center;
+        padding-top: 60px;
     }
 
-    100% {
-        background-color: #4682B4;
+    /*-------------------------------------------- HOME SECTION --------------------------------------------*/
+
+    /*------------ Particles Container ------------*/
+    @keyframes changeBackgroundColor {
+        0% {
+            background-color: #181936;
+        }
+
+        25% {
+            background-color: #1e1b56;
+        }
+
+        50% {
+            background-color: #1b3856;
+        }
+
+        75% {
+            background-color: #1b3d56;
+        }
+
+        100% {
+            background-color: #1b4f56;
+        }
     }
-}
 
-#particles-js {
-    position: fixed;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #b61924;
-    animation: changeBackgroundColor 20s infinite;
-}
+    #particles-js {
+        position: fixed;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #b61924;
+        animation: changeBackgroundColor 20s infinite;
+    }
 
-/*------------ Picture Container ------------*/
+    /*------------ Nav Bar Container ------------*/
+    .active-link {
+        background-color: #d2cfcf;
+        color: #000000;
+    }
+
+    nav {
+        z-index: 5;
+        position: fixed;
+        left: 50%;
+        top: 10px;
+        transform: translateX(-50%);
+        width: 65%;
+        padding: 5px 15px;
+        background-color: rgba(200, 200, 200, 0.95);
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav>div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav h4,
+    nav a {
+        margin: 0 5px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        color: #646161;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav a:hover,
+    nav h4:hover {
+        color: #000000;
+    }
+
+    @media only screen and (max-width: 768px) {
+        nav {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav h4,
+        nav a {
+            margin: 5px 0;
+        }
+    }
 
 
-.picture-container {
-    display: inline-block;
-    position: relative;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 50%;
-    z-index: 2;
-}
+    /*------------ Picture Container ------------*/
 
 
-.picture-container img {
-    width: 100%;
-    height: auto;
-}
+    .picture-container {
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        border-radius: 50%;
+        z-index: 2;
+    }
 
-/*------------ Introduction Container ------------*/
-.intro-text {
-    font-family: "Nunito", sans-serif;
-    font-size: 26px;
-    color: #fff;
-    justify-content: center;
-    margin: 0 auto;
-    border-radius: 15px;
-    padding: 25px;
-    z-index: 2;
-}
 
-/*------------ Content Styles ------------*/
-#projects {
-    background-color: #d5d5d5;
-}
+    .picture-container img {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
 
-#skills {
-    background-color: #bbb;
-}
+    @media only screen and (max-width: 500px) {
+        .picture-container {
+            width: 80px;
+            height: 80px;
+        }
+    }
 
-#experience {
-    background-color: #a5a5a5;
-}
+    /*------------ Introduction Container ------------*/
+    .intro-text {
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+        justify-content: center;
+        margin: 0 auto;
+        border-radius: 15px;
+        padding: 15px;
+        z-index: 2;
+        line-height: 1.5;
+        text-align: center;
+        max-width: 800px;
+        margin-top: 20px;
+    }
 
-#education {
-    background-color: #8a8a8a;
-}
+    @media only screen and (max-width: 768px) {
+        .intro-text {
+            font-size: 24px;
+        }
 
-#contact {
-    background-color: #6a6a6a;
-}
+        p {
+            font-size: 12px;
+        }
+    }
+
+    /*------------ Socials Container ------------*/
+    .social-icons {
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .social-icons a {
+        font-size: 60px;
+        height: 60px;
+        width: 60px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .social-icons a {
+            font-size: 60px;
+            height: 60px;
+            width: 60px;
+        }
+    }
+
+    /*-------------------------------------------- PROJECTS SECTION --------------------------------------------*/
+
+    #projects {
+        background-color: #d5d5d5;
+    }
+
+    .project {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .project-info {
+        flex: 1;
+        padding-right: 20px;
+    }
+
+    .project-image img {
+        max-width: 300px;
+        border-radius: 10px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .project {
+            flex-direction: column;
+        }
+
+        .project-info {
+            padding-right: 0;
+            text-align: center;
+            /* Center the text on small screens */
+            margin-bottom: 15px;
+            /* Creates some space between the text and the image on small screens */
+        }
+
+        .project-image img {
+            max-width: 100%;
+        }
+    }
+
+    /*-------------------------------------------- SKILLS SECTION --------------------------------------------*/
+    #skills {
+        background-color: #bbb;
+    }
+
+    /*-------------------------------------------- EXPERIENCE SECTION --------------------------------------------*/
+    #experience {
+        background-color: #a5a5a5;
+    }
+
+    /*-------------------------------------------- EDUCATION SECTION --------------------------------------------*/
+    #education {
+        background-color: #8a8a8a;
+    }
+
+    /*-------------------------------------------- CONTACT SECTION --------------------------------------------*/
+    #contact {
+        background-color: #6a6a6a;
+    }
