@@ -40,7 +40,6 @@ document.addEventListener('scroll', function () {
             break;
         }
     }
-
     // If we found a section, highlight the corresponding navbar item
     if (currentSection) {
         // Remove previous active class

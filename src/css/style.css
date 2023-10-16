@@ -71,7 +71,7 @@
 
     /*------------ Nav Bar Container ------------*/
     .active-link {
-        background-color: #d2cfcf;
+        background-color: #fffafa;
         color: #000000;
     }
 
@@ -203,21 +203,26 @@
         background-color: #d5d5d5;
     }
 
-    .project {
+    .gradebook-project {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 20px;
     }
 
-    .project-info {
+    .gradebook-description {
         flex: 1;
         padding-right: 20px;
     }
 
-    .project-image img {
+    .gradebook-image {
         max-width: 300px;
         border-radius: 10px;
+    }
+
+    .gradebook-image img {
+        width: 100%;
+        height: auto;
     }
 
     @media only screen and (max-width: 768px) {
@@ -225,13 +230,13 @@
             flex-direction: column;
         }
 
-        .project-info {
+        .gradebook-project {
             padding-right: 0;
             text-align: center;
             margin-bottom: 15px;
         }
 
-        .project-image img {
+        .gradebook-image img {
             max-width: 100%;
         }
     }
