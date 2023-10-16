@@ -57,3 +57,16 @@ document.addEventListener('scroll', function () {
 });
 
 
+function adjustParticlesHeight() {
+    const headerHeight = document.querySelector('header').offsetHeight;
+    const particlesContainer = document.getElementById('particles-js');
+    particlesContainer.style.height = `${headerHeight}px`;
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    adjustParticlesHeight();
+});
+
+window.addEventListener('resize', function () {
+    adjustParticlesHeight();
+});
