@@ -1,1 +1,102 @@
-<link rel="icon" href="favicon.png" type="image/png">
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" href="assets/media/favicon.ico" type="image/ico">
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="src/js/main.js" defer></script>
+    <script src="assets/data/particles.js/particles.js"></script>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar-container" id="navbar"></nav>
+
+    <!---------------------------------------------- HOME SECTION ---------------------------------------------->
+    <header id="home">
+        <!-- Picture -->
+        <div class="picture-container">
+
+            <img src="assets/media/headshot.jpeg" alt="profile-picture">
+        </div>
+
+        <!-- ParticlesJS -->
+        <div id="particles-js"></div>
+
+        <!-- Introduction -->
+        <p class="intro-text">
+            Hello, I'm Eduardo. I'm a Computer Science student at CSUF.
+            I'm currently a Research Assistant with the department of Computer Science. I spend most of my time
+            exploring
+            new technologies and developing my current skills.
+        </p>
+
+        <!-- Socials -->
+        <div class="social-icons">
+            <a href="https://github.com/eddayyy" target="_blank" rel="noopener noreferrer">
+                <iconify-icon icon="icon-park:github" id="github"></iconify-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/eduardong" target="_blank" rel="noopener noreferrer">
+                <iconify-icon icon="skill-icons:linkedin" id="linkedin"></iconify-icon>
+            </a>
+        </div>
+    </header>
+
+    <!---------------------------------------------- PROJECTS SECTION ---------------------------------------------->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="gradebook-project">
+            <div class="gradebook-description">
+                <h3>GradeBook GUI Application</h3>
+                <h4>A console app that manages student grades. Users can load gradebooks from a file and get an
+                    overview
+                    of student
+                    performances. Students' grades can be added, updated, or removed, and users can generate
+                    statistical
+                    insights like the
+                    class average, highest grade, lowest grade, etc.</h4>
+            </div>
+            <div class="gradebook-image">
+                <img src="assets/media/GradeBook.png" alt="Demo Image">
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------------- SKILLS SECTION ----------------------------------------------->
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>These are some of the skills I've acquired:</p>
+    </section>
+
+    <!---------------------------------------------- EXPERIENCE SECTION ---------------------------------------------->
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>Here's a brief overview of my work experience:</p>
+    </section>
+
+    <!---------------------------------------------- EDUCATION SECTION ---------------------------------------------->
+    <section id="education">
+        <h2>Education</h2>
+        <p>I'm a Computer Science student at California State University Fullerton.</p>
+    </section>
+
+    <!---------------------------------------------- CONTACT SECTION ---------------------------------------------->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to <a href="mailto:eduardo@example.com">email me</a>.</p>
+    </section>
+
+    <script>
+        particlesJS.load('particles-js', 'assets/data/particles.js/particles.json', function () {
+            console.log('particles.js loaded - callback');
+        });
+    </script>
+</body>
+
+</html>
