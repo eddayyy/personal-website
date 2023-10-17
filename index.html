@@ -1,28 +1,41 @@
+<!-- TAILWIND COMMAND: 
+npx tailwindcss -i src/css/stylesheet.css -o build/css/tailwind.css --watch
+-->
 <!DOCTYPE html>
 <html>
 
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
     <title>Eduardo's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/output.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap">
+    <link rel="stylesheet" href="build/css/tailwind.css">
+
+    <!-- Favicon -->
     <link rel="icon" href="assets/media/favicon.ico" type="image/ico">
 
+    <!-- Scripts -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="src/js/main.js" defer></script>
     <script src="assets/data/particles.js/particles.js"></script>
 </head>
 
+
 <body>
     <!-- Nav Bar -->
-    <nav class="navbar-container" id="navbar"></nav>
+    <nav class=" navbar-container" id="navbar">
+    </nav>
 
     <!---------------------------------------------- HOME SECTION ---------------------------------------------->
     <header id="home">
         <!-- Picture -->
-        <div class="picture-container">
+
+        <div class=" picture-container">
 
             <img src="assets/media/headshot.jpeg" alt="profile-picture">
         </div>
@@ -50,12 +63,18 @@
     </header>
 
     <!---------------------------------------------- PROJECTS SECTION ---------------------------------------------->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="gradebook-project">
+
+    <section id=" projects">
+
+        <div class=" font-bold text-2xl py-20">
+            My Projects
+        </div>
+        <div class="gradebook-project shadow-lg">
             <div class="gradebook-description">
-                <h3>GradeBook GUI Application</h3>
-                <h4>A console app that manages student grades. Users can load gradebooks from a file and get an
+                <h3 class="font-bold align-top">GradeBook GUI Application</h3>
+                <h2 class="font-Nunito semi-bold">Made with: </h2>
+                <h4>A console app that manages student grades. Users can load gradebooks from a file and get
+                    an
                     overview
                     of student
                     performances. Students' grades can be added, updated, or removed, and users can generate
@@ -63,9 +82,7 @@
                     insights like the
                     class average, highest grade, lowest grade, etc.</h4>
             </div>
-            <div class="gradebook-image">
-                <img src="assets/media/GradeBook.png" alt="Demo Image">
-            </div>
+            <img src=" assets/media/GradeBook.png" alt="Demo Image" class="h-72 rounded shadow-xl hover:shadow-2xl">
         </div>
     </section>
 
@@ -90,7 +107,8 @@
     <!---------------------------------------------- CONTACT SECTION ---------------------------------------------->
     <section id="contact">
         <h2>Contact</h2>
-        <p>If you'd like to get in touch, feel free to <a href="mailto:eduardo@example.com">email me</a>.</p>
+        <p>If you'd like to get in touch, feel free to <a href="mailto:eduardo@example.com">email me</a>.
+        </p>
     </section>
 
     <script>

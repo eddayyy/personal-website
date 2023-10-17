@@ -1,6 +1,6 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /*------------ Universal Styles ------------*/
 * {
@@ -37,6 +37,10 @@ p {
     padding-top: 60px;
 }
 
+h1 {
+    z-index: 3;
+}
+
 /*-------------------------------------------- HOME SECTION --------------------------------------------*/
 
 /*------------ Particles Container ------------*/
@@ -63,7 +67,7 @@ p {
 }
 
 #particles-js {
-    z-index: 0;
+    z-index: -1;
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
@@ -199,7 +203,6 @@ nav h4:hover {
 .linkedin:focus,
 .linkedin:active {
     transform: scale(1.05);
-    /* scale-105 equivalent in Tailwind */
 }
 
 .github,
@@ -259,6 +262,13 @@ nav h4:hover {
 .gradebook-image img {
     width: 100%;
     height: auto;
+}
+
+.outlined-shadow {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* Thin border with slight opacity */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Standard box-shadow for extra depth */
 }
 
 @media only screen and (max-width: 768px) {

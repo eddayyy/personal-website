@@ -534,6 +534,129 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-72 {
+  height: 18rem;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.resize {
+  resize: both;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-opacity-40 {
+  --tw-border-opacity: 0.4;
+}
+
+.bg-gray-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 7 18 / var(--tw-bg-opacity));
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.align-top {
+  vertical-align: top;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline {
+  outline-style: solid;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 /*------------ Universal Styles ------------*/
 
 * {
@@ -569,6 +692,10 @@ p {
   padding-top: 60px;
 }
 
+h1 {
+  z-index: 3;
+}
+
 /*-------------------------------------------- HOME SECTION --------------------------------------------*/
 
 /*------------ Particles Container ------------*/
@@ -596,7 +723,7 @@ p {
 }
 
 #particles-js {
-  z-index: 0;
+  z-index: -1;
   position: absolute !important;
   top: 0 !important;
   left: 0 !important;
@@ -725,6 +852,40 @@ nav h4:hover {
   width: 100%;
 }
 
+/* style.css */
+
+.github:hover,
+.github:focus,
+.github:active,
+.linkedin:hover,
+.linkedin:focus,
+.linkedin:active {
+  transform: scale(1.05);
+}
+
+.github,
+.linkedin {
+  background-color: #2d3748;
+  /* bg-gray-950 equivalent in Tailwind */
+  color: white;
+  /* text-white equivalent in Tailwind */
+  padding: 1rem 1.75rem;
+  /* px-7 py-3 equivalent in Tailwind */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* gap-2 equivalent in Tailwind */
+  border-radius: 9999px;
+  /* rounded-full equivalent in Tailwind */
+  outline: none;
+  transition: transform 0.3s ease;
+  /* transition for the scale effect */
+  border: 2px solid white;
+  /* border-2 border-white equivalent in Tailwind */
+  border-opacity: 0.4;
+  /* border-opacity-40 equivalent in Tailwind */
+}
+
 @media only screen and (max-width: 768px) {
   .social-icons a {
     font-size: 60px;
@@ -759,6 +920,13 @@ nav h4:hover {
 .gradebook-image img {
   width: 100%;
   height: auto;
+}
+
+.outlined-shadow {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* Thin border with slight opacity */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Standard box-shadow for extra depth */
 }
 
 @media only screen and (max-width: 768px) {
@@ -800,4 +968,10 @@ nav h4:hover {
 
 #contact {
   background-color: #6a6a6a;
+}
+
+.hover\:shadow-2xl:hover {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
