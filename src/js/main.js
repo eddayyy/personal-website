@@ -65,8 +65,3 @@ function adjustParticlesHeight() {
 
 window.addEventListener('resize', adjustParticlesHeight);
 window.addEventListener('load', adjustParticlesHeight);
-
-function toggleMobileMenu() {
-    const menu = document.querySelector('.nav-list');
-    menu.classList.toggle('active');
-}
