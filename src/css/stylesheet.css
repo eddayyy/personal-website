@@ -321,3 +321,44 @@ nav h4:hover {
 #contact {
     background-color: #6a6a6a;
 }
+
+
+
+
+/*-------------------------------------------- MOBILE STYLES SECTION --------------------------------------------*/
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 90%;
+    }
+
+    header,
+    section {
+        padding: 20px 10px;
+    }
+
+    nav {
+        width: 90%;
+        padding: 5px 10px;
+    }
+
+    .social-icons a {
+        font-size: 50px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .weatherful-description,
+    .tic-tac-toe-description,
+    .gradebook-description {
+        text-align: center;
+    }
+
+    .weatherful-bot img,
+    .tic-tac-toe img,
+    .gradebook-project img {
+        display: block;
+        margin: 10px auto;
+        max-width: 100%;
+    }
+
+}
