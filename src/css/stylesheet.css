@@ -360,7 +360,7 @@ nav h4:hover {
     .tic-tac-toe img,
     .weatherful-bot img,
     .gradebook-project img {
-        height: fit-content;
+        height: auto;
         width: fit-content;
     }
 }
