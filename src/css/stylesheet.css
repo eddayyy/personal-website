@@ -359,9 +359,22 @@ nav h4:hover {
 
 /*-------------------------------------------- SKILLS SECTION --------------------------------------------*/
 #skills {
-    background-color: #bbb;
-    width: 100%;
+    background-color: white;
 }
+
+.skills-container {
+    font-size: 65px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 25px;
+    font-size: 30px;
+    word-spacing: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-icon {}
 
 /*-------------------------------------------- EXPERIENCE SECTION --------------------------------------------*/
 #experience {
