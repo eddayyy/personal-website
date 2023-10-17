@@ -975,7 +975,7 @@ nav h4:hover {
 /*-------------------------------------------- PROJECTS SECTION --------------------------------------------*/
 
 #projects {
-  background-color: #d5d5d5;
+  background-color: #ffffff;
 }
 
 .tech-logos {
@@ -990,9 +990,11 @@ nav h4:hover {
 .tic-tac-toe,
 .weatherful-bot,
 .gradebook-project {
+  background-color: hsla(0, 0%, 97%, 0.891);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   margin-bottom: 20px;
 }
 
