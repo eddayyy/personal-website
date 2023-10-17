@@ -586,6 +586,10 @@ video {
   resize: both;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -804,15 +808,38 @@ nav h4:hover {
   color: #000000;
 }
 
-@media only screen and (max-width: 768px) {
+/* Styling the nav bar for smaller devices */
+
+@media only screen and (max-width: 700px) {
+  .active-link {
+    padding: 4px;
+  }
+
   nav {
-    flex-direction: column;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
   }
 
-  nav h4,
-    nav a {
-    margin: 5px 0;
+  nav>div {
+    font-size: 20px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  nav h4 {
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+    flex: 1;
+    flex-wrap: wrap;
+    white-space: normal;
+    /* Added this property to ensure text wraps */
   }
 }
 
@@ -834,7 +861,7 @@ nav h4:hover {
   justify-content: center;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   .picture-container {
     width: 80px;
     height: 80px;
@@ -857,9 +884,9 @@ nav h4:hover {
   margin-top: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
   .intro-text {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   p {
@@ -912,11 +939,32 @@ nav h4:hover {
   /* border-2 border-white equivalent in Tailwind */
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
   .social-icons a {
+    z-index: 2;
     font-size: 60px;
-    height: 60px;
+    height: 15%;
     width: 60px;
+  }
+
+  .github,
+    .linkedin {
+    z-index: 3;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d3748;
+    /* bg-gray-950 equivalent in Tailwind */
+    color: white;
+  }
+
+  .github:hover,
+    .github:focus,
+    .github:active,
+    .linkedin:hover,
+    .linkedin:focus,
+    .linkedin:active {
+    transform: scale(1.05);
   }
 }
 
@@ -956,7 +1004,8 @@ nav h4:hover {
 
 .tic-tac-toe img,
 .weatherful-bot img,
-.gradebook-project img {
+.gradebook-project img,
+.personal-website img {
   height: 200px;
   /* or any other consistent height */
   width: auto;
@@ -971,19 +1020,39 @@ nav h4:hover {
   /* Standard box-shadow for extra depth */
 }
 
-@media only screen and (max-width: 768px) {
-  .project {
+@media only screen and (max-width: 700px) {
+  .tech-logos {
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 12px;
+  }
+
+  .personal-website,
+    .tic-tac-toe,
+    .weatherful-bot,
+    .gradebook-project {
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .gradebook-project {
-    padding-right: 0;
-    text-align: center;
-    margin-bottom: 15px;
+  .website-description,
+    .tic-tac-toe-description,
+    .weatherful-description,
+    .gradebook-description {
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
   }
 
-  .gradebook-image img {
-    max-width: 100%;
+  .personal-website img,
+    .tic-tac-toe img,
+    .weatherful-bot img,
+    .gradebook-project img {
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 
