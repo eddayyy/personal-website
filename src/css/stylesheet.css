@@ -46,24 +46,26 @@ h1 {
 
 /*------------ Particles Container ------------*/
 @keyframes changeBackgroundColor {
-    0% {
+
+    0%,
+    100% {
         background-color: #181936;
     }
 
     25% {
-        background-color: #1e1b56;
+        background-color: rgb(52, 80, 117);
     }
 
     50% {
-        background-color: #1b3856;
+        background-color: #494c9d;
     }
 
     75% {
-        background-color: #1b3d56;
+        background-color: #455db4;
     }
 
-    100% {
-        background-color: #1b2756;
+    87.5% {
+        background-color: #5d7ac4;
     }
 }
 
@@ -76,8 +78,9 @@ h1 {
     width: 100% !important;
     height: 100% !important;
     overflow: hidden;
-    animation: changeBackgroundColor 20s infinite;
+    animation: changeBackgroundColor 20s infinite alternate;
 }
+
 
 /*------------ Nav Bar Container ------------*/
 .active-link {
@@ -363,6 +366,7 @@ nav h4:hover {
 }
 
 .skills-container {
+    background-color: hsla(0, 0%, 97%, 0.891);
     font-size: 65px;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     padding-left: 45px;
