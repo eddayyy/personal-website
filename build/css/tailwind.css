@@ -1045,13 +1045,15 @@ nav h4:hover {
     align-items: center;
   }
 
-  .personal-website img,
+  .gradebook-project img,
+    .personal-website img,
     .tic-tac-toe img,
     .weatherful-bot img,
-    .gradebook-project img {
-    height: auto;
-    width: -moz-fit-content;
-    width: fit-content;
+    .gradebook-img {
+    height: 150px;
+    width: 250px;
+    max-width: 400px;
+    justify-content: center;
   }
 }
 
