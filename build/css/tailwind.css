@@ -554,10 +554,6 @@ video {
   z-index: 10;
 }
 
-.box-content {
-  box-sizing: content-box;
-}
-
 .flex {
   display: flex;
 }
@@ -651,10 +647,6 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.pr-16 {
-  padding-right: 4rem;
 }
 
 .align-top {
@@ -1061,8 +1053,7 @@ nav h4:hover {
     .weatherful-bot img,
     .gradebook-img {
     height: 150px;
-    width: 250px;
-    max-width: 400px;
+    width: auto;
     justify-content: center;
   }
 }

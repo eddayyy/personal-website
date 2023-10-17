@@ -365,8 +365,7 @@ nav h4:hover {
     .weatherful-bot img,
     .gradebook-img {
         height: 150px;
-        width: 250px;
-        max-width: 400px;
+        width: auto;
         justify-content: center;
     }
 }
