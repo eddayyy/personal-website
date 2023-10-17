@@ -66,24 +66,88 @@ npx tailwindcss -i src/css/stylesheet.css -o build/css/tailwind.css --watch
 
     <section id=" projects">
 
-        <div class=" font-bold text-2xl py-20">
+        <div class="z-10 font-bold text-2xl py-20">
             My Projects
         </div>
-        <div class="gradebook-project shadow-lg">
-            <div class="gradebook-description">
-                <h3 class="font-bold align-top">GradeBook GUI Application</h3>
-                <h2 class="font-Nunito semi-bold">Made with: </h2>
-                <h4>A console app that manages student grades. Users can load gradebooks from a file and get
-                    an
-                    overview
-                    of student
-                    performances. Students' grades can be added, updated, or removed, and users can generate
-                    statistical
-                    insights like the
-                    class average, highest grade, lowest grade, etc.</h4>
+
+        <!-- WEATHERFUL-BOT -->
+        <div class="weatherful-bot z-0 rounded shadow-md hover:shadow-lg outline flex-1 py-10 ">
+            <div class="weatherful-description px-8">
+                <h3 class=" font-bold align-top">Weatherful-Bot</h3>
+                <h2 class="semi-bold">Made with:<iconify-icon class="tech-logos"
+                        icon="logos:python"></iconify-icon><iconify-icon class="tech-logos"
+                        icon="logos:aws"></iconify-icon><iconify-icon class="tech-logos"
+                        icon="logos:aws-lambda"></iconify-icon>
+                </h2>
+                <h4>A Python-based automated weather alert system, developed and deployed to AWS Lambda to provide
+                    real-time
+                    weather tweets for Fullerton, CA. The bot leverages APIs from Twitter/X and Weatherbit to retrieve
+                    and The automation is orchestrated through Amazon EventBridge.Its foundation on AWS
+                    Lambda's serverless framework ensured automatic scalability with
+                    fluctuating traffic and marked cost-efficiency.</h4>
             </div>
-            <img src=" assets/media/GradeBook.png" alt="Demo Image" class="h-72 rounded shadow-xl hover:shadow-2xl">
+            <img src="assets/media/GradeBook.png" alt="Demo Image of the Weatherful-Bot twitter account"
+                class="w-2/4 h-72 rounded shadow-xl hover:shadow-2xl pr-16">
         </div>
+
+        <!-- TIC-TAC-TOE -->
+        <div class="tic-tac-toe z-0 rounded shadow-md hover:shadow-lg outline flex-1 py-10 ">
+            <div class="tic-tac-toe-description px-8">
+                <h3 class=" font-bold align-top">Artificially Intelligent Tic-Tac-Toe</h3>
+                <h2 class="made-with semi-bold">Made with:<iconify-icon class="tech-logos"
+                        icon="logos:c-plusplus"></iconify-icon>
+                </h2>
+                <h4>Two Tic-Tac-Toe Games developed entirely in C++.
+                    <br>Version 1:<br>Console representation of a tic-tac-toe game prompting the user for input, the
+                    user
+                    can play another player on the same device.
+                    <br> Version 2:<br>Implements the Alpha-Beta Pruning algorithm
+                    and
+                    a game state evaluation algorithm to determine winning moves for the AI player.
+                </h4>
+            </div>
+            <img src="assets/media/GradeBook.png" alt="Demo Image of the Tic-Tac-Toe Game"
+                class="w-2/4 h-72 rounded shadow-xl hover:shadow-2xl pr-16">
+        </div>
+
+        <!-- GRADEBOOK -->
+        <div class="gradebook-project z-0 rounded shadow-md hover:shadow-lg outline flex-1 py-10">
+            <div class="gradebook-description px-8">
+                <h3 class="font-bold align-top">GradeBook GUI Application</h3>
+                <h2 class="semi-bold">Made with: <iconify-icon class="tech-logos"
+                        icon="logos:python"></iconify-icon><iconify-icon class="tech-logos"
+                        icon="logos:qt"></iconify-icon>
+                </h2>
+                <h4>The Gradebook app, crafted with the Qt GUI Framework, serves to aid educators in handling student
+                    grades. It streamlines
+                    the grading procedure, offering in-depth data analysis to shed light on both individual student and
+                    overall class
+                    performance.</h4>
+            </div>
+            <img src="assets/media/GradeBook.png" alt="Demo Image"
+                class="w-2/4 h-72 rounded shadow-xl hover:shadow-2xl pr-16">
+        </div>
+
+        <!-- WEBSITE -->
+        <div class="personal-website z-0 rounded shadow-md hover:shadow-lg outline flex-1 py-10">
+            <div class="website-description px-8">
+                <h3 class="font-bold align-top">Personal Website</h3>
+                <h2 class="semi-bold">Made with:<iconify-icon class="tech-logos"
+                        icon="vscode-icons:file-type-js-official"></iconify-icon><iconify-icon class="tech-logos"
+                        icon="vscode-icons:file-type-html"></iconify-icon><iconify-icon class="tech-logos"
+                        icon="vscode-icons:file-type-css"></iconify-icon><iconify-icon class="tech-logos"
+                        icon="devicon:cloudflare"></iconify-icon>
+                </h2>
+                <h4>The Gradebook app, crafted with the Qt GUI Framework, serves to aid educators in handling student
+                    grades. It streamlines
+                    the grading procedure, offering in-depth data analysis to shed light on both individual student and
+                    overall class
+                    performance.</h4>
+            </div>
+            <img src="assets/media/GradeBook.png" alt="Demo Image"
+                class="w-2/4 h-72 rounded shadow-xl hover:shadow-2xl pr-16">
+        </div>
+
     </section>
 
     <!---------------------------------------------- SKILLS SECTION ----------------------------------------------->
