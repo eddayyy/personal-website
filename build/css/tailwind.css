@@ -945,24 +945,6 @@ nav h4:hover {
 }
 
 @media only screen and (max-width: 700px) {
-  .social-icons a {
-    z-index: 2;
-    font-size: 60px;
-    height: 15%;
-    width: 60px;
-  }
-
-  .github,
-    .linkedin {
-    z-index: 3;
-    font-size: 15px;
-    justify-content: center;
-    align-items: center;
-    background-color: #2d3748;
-    /* bg-gray-950 equivalent in Tailwind */
-    color: white;
-  }
-
   .github:hover,
     .github:focus,
     .github:active,
