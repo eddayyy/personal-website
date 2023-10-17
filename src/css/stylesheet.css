@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 
+
 header,
 section {
     min-height: 100vh;
@@ -82,6 +83,9 @@ h1 {
 .active-link {
     background-color: #fffafa;
     color: #000000;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 nav {
@@ -115,6 +119,7 @@ nav a {
 nav a:hover,
 nav h4:hover {
     color: #000000;
+    font-weight: bold;
 }
 
 
@@ -317,11 +322,9 @@ nav h4:hover {
 .weatherful-bot img,
 .gradebook-project img,
 .personal-website img {
+    margin-right: 4rem;
     height: 200px;
-    /* or any other consistent height */
     width: auto;
-    max-width: 40%;
-    /* or any other consistent width */
 }
 
 .outlined-shadow {
