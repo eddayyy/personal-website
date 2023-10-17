@@ -117,6 +117,51 @@ nav h4:hover {
     color: #000000;
 }
 
+/* Mobile Dropdown */
+.nav-mobile-toggle {
+    display: none;
+    /* By default, the toggle button is hidden */
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list a {
+    margin: 0 15px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Show mobile toggle and hide navigation links on smaller screens */
+    .nav-mobile-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        /* Adjust as per your navbar height */
+        right: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        /* Adjust the color as required */
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list a {
+        margin: 10px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     nav {
         flex-direction: column;
