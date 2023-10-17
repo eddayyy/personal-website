@@ -160,6 +160,7 @@ nav h4:hover {
 
 /*------------ Picture Container ------------*/
 .picture-container {
+    justify-content: center;
     display: inline-block;
     position: relative;
     width: 100px;
@@ -178,8 +179,8 @@ nav h4:hover {
 
 @media only screen and (max-width: 700px) {
     .picture-container {
-        width: 80px;
-        height: 80px;
+        width: 150px;
+        height: 150px;
     }
 }
 
@@ -366,6 +367,7 @@ nav h4:hover {
     .tic-tac-toe img,
     .weatherful-bot img,
     .gradebook-img {
+        margin: 0;
         height: 150px;
         width: auto;
         justify-content: center;
