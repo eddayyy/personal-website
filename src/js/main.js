@@ -91,3 +91,8 @@ const backToTop = () => {
 mybutton.addEventListener("click", backToTop);
 
 window.addEventListener("scroll", scrollFunction);
+
+const toggleButton = document.getElementById("darkModeToggle");
+toggleButton.addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+});

@@ -28,7 +28,7 @@ npx tailwindcss -i src/css/stylesheet.css -o build/css/tailwind.css --watch
 
 <body>
     <!-- Nav Bar -->
-    <nav class=" navbar-container" id="navbar"></nav>
+    <nav class="navbar-container bg-gray-100 dark:bg-gray-800 navbar-container" id="navbar"></nav>
 
     <!---------------------------------------------- HOME SECTION ---------------------------------------------->
     <header id="home">
@@ -146,7 +146,8 @@ npx tailwindcss -i src/css/stylesheet.css -o build/css/tailwind.css --watch
                         icon="vscode-icons:file-type-css"></iconify-icon><iconify-icon class="tech-logos"
                         icon="devicon:cloudflare"></iconify-icon>
                 </h2>
-                <h4>The Gradebook app, crafted with the Qt GUI Framework, serves to aid educators in handling student
+                <h4>The Gradebook app, crafted with the Qt GUI
+                    Framework, serves to aid educators in handling student
                     grades. It streamlines
                     the grading procedure, offering in-depth data analysis to shed light on both individual student and
                     overall class
@@ -190,6 +191,63 @@ npx tailwindcss -i src/css/stylesheet.css -o build/css/tailwind.css --watch
     <section id="experience">
         <h2>Experience</h2>
         <p>Here's a brief overview of my work experience:</p>
+        <ol class="border-l border-neutral-300 dark:border-neutral-500">
+            <!--First item-->
+            <li>
+                <div class="flex-start flex items-center pt-3">
+                    <div class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500"></div>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-300">
+                        01.07.2021
+                    </p>
+                </div>
+                <div class="mb-6 ml-4 mt-2">
+                    <h4 class="mb-1.5 text-xl font-semibold">Title of section 1</h4>
+                    <p class="mb-3 text-neutral-500 dark:text-neutral-300">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                        scelerisque diam non nisi semper, et elementum lorem ornare.
+                        Maecenas placerat facilisis mollis. Duis sagittis ligula in
+                        sodales vehicula.
+                    </p>
+                </div>
+            </li>
+
+            <!--Second item-->
+            <li>
+                <div class="flex-start flex items-center pt-2">
+                    <div class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500"></div>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-300">
+                        13.09.2021
+                    </p>
+                </div>
+                <div class="mb-6 ml-4 mt-2">
+                    <h4 class="mb-1.5 text-xl font-semibold">Title of section 2</h4>
+                    <p class="mb-3 text-neutral-500 dark:text-neutral-300">
+                        Libero expedita explicabo eius fugiat quia aspernatur autem
+                        laudantium error architecto recusandae natus sapiente sit nam
+                        eaque, consectetur porro molestiae ipsam an deleniti.
+                    </p>
+                </div>
+            </li>
+
+            <!--Third item-->
+            <li>
+                <div class="flex-start flex items-center pt-2">
+                    <div class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500"></div>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-300">
+                        25.11.2021
+                    </p>
+                </div>
+                <div class="ml-4 mt-2 pb-5">
+                    <h4 class="mb-1.5 text-xl font-semibold">Title of section 3</h4>
+                    <p class="mb-3 text-neutral-500 dark:text-neutral-300">
+                        Voluptatibus temporibus esse illum eum aspernatur, fugiat suscipit
+                        natus! Eum corporis illum nihil officiis tempore. Excepturi illo
+                        natus libero sit doloremque, laborum molestias rerum pariatur quam
+                        ipsam necessitatibus incidunt, explicabo.
+                    </p>
+                </div>
+            </li>
+        </ol>
     </section>
     <hr class="z-10 my-0 h-1/2 bg-neutral-500 opacity-100 dark:opacity-100" />
 
@@ -206,25 +264,45 @@ npx tailwindcss -i src/css/stylesheet.css -o build/css/tailwind.css --watch
         <h2>Contact</h2>
         <p>If you'd like to get in touch, feel free to <a href="mailto:eduardo@example.com">email me</a>.
         </p>
-    </section>
 
+
+
+    </section>
+    <!---------------------------------------------- ADDITIONAL FEATURES SECTION ---------------------------------------------->
+
+    <!-- Dark Mode Toggle Button
+    <button id="darkModeToggle" class="fixed bottom-5 left-5 bg-gray-700 text-white px-3 py-1 rounded">Toggle Dark
+        Mode</button>
+
+    <script>
+        const toggleButton = document.getElementById("darkModeToggle");
+        toggleButton.addEventListener("click", function () {
+            document.body.classList.toggle("dark");
+        });
+    </script> -->
+
+    <!-- Particles.JS Loading-->
     <script>
         particlesJS.load('particles-js', 'assets/data/particles.js/particles.json', function () {
             console.log('particles.js loaded - callback');
         });
     </script>
+
+    <!-- Back to top button -->
+    <button type="button" data-te-ripple-init data-te-ripple-color="light"
+        class="!fixed bottom-5 right-5 hidden rounded-full bg-blue-600 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg"
+        id="btn-back-to-top">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" class="h-4 w-4" role="img"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="currentColor"
+                d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
+            </path>
+        </svg>
+    </button>
+
 </body>
 
-<!-- Back to top button -->
-<button type="button" data-te-ripple-init data-te-ripple-color="light"
-    class="!fixed bottom-5 right-5 hidden rounded-full bg-blue-600 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg"
-    id="btn-back-to-top">
-    <svg aria-hidden="true" focusable="false" data-prefix="fas" class="h-4 w-4" role="img"
-        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-        <path fill="currentColor"
-            d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
-        </path>
-    </svg>
-</button>
+
+
 
 </html>

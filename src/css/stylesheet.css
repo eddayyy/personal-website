@@ -8,6 +8,13 @@
     box-sizing: border-box;
 }
 
+.bg-white {
+    background-color: white;
+}
+
+.dark:bg-black {
+    background-color: black;
+}
 
 header,
 section {
@@ -382,7 +389,7 @@ nav h4:hover {
 
 /*-------------------------------------------- EXPERIENCE SECTION --------------------------------------------*/
 #experience {
-    background-color: #a5a5a5;
+    background-color: #ffffff;
 }
 
 /*-------------------------------------------- EDUCATION SECTION --------------------------------------------*/
@@ -392,5 +399,5 @@ nav h4:hover {
 
 /*-------------------------------------------- CONTACT SECTION --------------------------------------------*/
 #contact {
-    background-color: #6a6a6a;
+    background-color: #ffffff;
 }
