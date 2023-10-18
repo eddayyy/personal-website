@@ -67,10 +67,11 @@ npx tailwindcss -i src/css/stylesheet.css -o build/css/tailwind.css --watch
                     class="linkedin"></iconify-icon>
             </a> -->
         </div>
+
     </header>
+    <hr class="z-10 my-0 h-1/2 bg-neutral-500 opacity-100 dark:opacity-100" />
 
     <!---------------------------------------------- PROJECTS SECTION ---------------------------------------------->
-
     <section id="projects">
 
         <div class="z-10 font-bold text-2xl py-20">
@@ -94,7 +95,7 @@ npx tailwindcss -i src/css/stylesheet.css -o build/css/tailwind.css --watch
                     fluctuating traffic and marked cost-efficiency.</h4>
             </div>
             <img src="assets/media/GradeBook.png" alt="Demo Image of the Weatherful-Bot twitter account"
-                class="w-2/4 h-72 rounded-md shadow-xl hover:shadow-2xl ">
+                class="w-2/4 h-72 rounded-md shadow-xl hover:shadow-2xl">
         </div>
 
         <!-- TIC-TAC-TOE -->
@@ -156,6 +157,7 @@ npx tailwindcss -i src/css/stylesheet.css -o build/css/tailwind.css --watch
         </div>
 
     </section>
+    <hr class="z-10 my-0 h-1/2 bg-neutral-500 opacity-100 dark:opacity-100" />
 
     <!---------------------------------------------- SKILLS SECTION ----------------------------------------------->
     <section id="skills">
@@ -182,20 +184,24 @@ npx tailwindcss -i src/css/stylesheet.css -o build/css/tailwind.css --watch
                 icon="logos:visual-studio-code"></iconify-icon>
         </div>
     </section>
+    <hr class="z-10 my-0 h-1/2 bg-neutral-500 opacity-100 dark:opacity-100" />
 
     <!---------------------------------------------- EXPERIENCE SECTION ---------------------------------------------->
     <section id="experience">
         <h2>Experience</h2>
         <p>Here's a brief overview of my work experience:</p>
     </section>
+    <hr class="z-10 my-0 h-1/2 bg-neutral-500 opacity-100 dark:opacity-100" />
 
     <!---------------------------------------------- EDUCATION SECTION ---------------------------------------------->
     <section id="education">
         <h2>Education</h2>
         <p>I'm a Computer Science student at California State University Fullerton.</p>
     </section>
+    <hr class="z-10 my-0 h-1/2 bg-neutral-500 opacity-100 dark:opacity-100" />
 
     <!---------------------------------------------- CONTACT SECTION ---------------------------------------------->
+
     <section id="contact">
         <h2>Contact</h2>
         <p>If you'd like to get in touch, feel free to <a href="mailto:eduardo@example.com">email me</a>.
@@ -208,5 +214,17 @@ npx tailwindcss -i src/css/stylesheet.css -o build/css/tailwind.css --watch
         });
     </script>
 </body>
+
+<!-- Back to top button -->
+<button type="button" data-te-ripple-init data-te-ripple-color="light"
+    class="!fixed bottom-5 right-5 hidden rounded-full bg-blue-600 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg"
+    id="btn-back-to-top">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" class="h-4 w-4" role="img"
+        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor"
+            d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
+        </path>
+    </svg>
+</button>
 
 </html>

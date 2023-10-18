@@ -166,8 +166,8 @@ nav h4:hover {
     justify-content: center;
     display: inline-block;
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     border-radius: 50%;
     z-index: 2;
@@ -378,7 +378,7 @@ nav h4:hover {
     justify-content: center;
 }
 
-.skills-icon {}
+/* .skills-icon {} */
 
 /*-------------------------------------------- EXPERIENCE SECTION --------------------------------------------*/
 #experience {
