@@ -392,6 +392,10 @@ nav h4:hover {
     background-color: #ffffff;
 }
 
+.experience-section {
+    background: hsla(0, 0%, 97%, 0.891);
+}
+
 /*-------------------------------------------- EDUCATION SECTION --------------------------------------------*/
 #education {
     background-color: #8a8a8a;

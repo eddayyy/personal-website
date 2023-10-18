@@ -607,6 +607,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -789,6 +793,14 @@ video {
 
 .pt-3 {
   padding-top: 0.75rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .align-top {
@@ -1279,6 +1291,10 @@ nav h4:hover {
 
 #experience {
   background-color: #ffffff;
+}
+
+.experience-section {
+  background: hsla(0, 0%, 97%, 0.891);
 }
 
 /*-------------------------------------------- EDUCATION SECTION --------------------------------------------*/
