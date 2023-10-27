@@ -1,6 +1,6 @@
 <div align="center">
     <img width=45% src="./assets/media/HomePage.png">
-    <h1>Personal Website 🌐</h1>
+    <h1>Personal Website (Work In Progress) 🌐</h1>
     <a href="https://eduardonunez.dev">
         <img alt="Status" src="https://img.shields.io/badge/Status-Live-brightgreen">
     </a>
@@ -20,10 +20,54 @@
 
 ## 🌟 Overview
 
-Welcome to my portfolio! My website aims to showcases my academic background, technical skills, industry experience, and the diverse projects I've undertaken. This website is still under construction it's being built with NodeJS, TailwindCSS, NPM, and Particles.js.
+Welcome to my portfolio! My website aims to showcases my academic background, technical skills, industry experience, and the diverse projects I've undertaken. ***This website is still under construction*** it's being built with NodeJS, TailwindCSS, NPM, and Particles.js.
+
+---
 
 ## **Features and Demo**
-- 
+
+#### Feature 1: Landing Page
+- **Descripton**: Upon the user landing the gtihub and linkedin icons are animated in as well as the Particles.js dynamic background. Users can interact with these components as they wish. 
+
+  - **Screenshot**: 
+
+    ![Feature 1 Screenshot](./assets/media/HomePage.png)
+
+#### Feature 2: Project Section
+- **Description**: When the user scrolls down past the home section my projects are displayed. Each project is described along with a demo picture, the tools I used (frameworks, utilites, languages, etc.) 
+
+  - **Screenshot**: 
+  
+    ![Feature 2 Screenshot](./assets/media/ProjectsSection.png)
+
+#### Feature 3: Skills Section
+- **Description**: Below the project section I display my skills which consists of technologies, languages, frameworks, etc. 
+
+  - **Screenshot**: 
+  
+    ![Feature 3 Screenshot](./assets/media/SkillsSection.png)
+
+#### Feature 4: Experience Section
+- **Description**: This section will contain all of my industry experience in reverse chronological order (most recent at the top). It contains starting and ending dates, responsibilities, company, and position title.
+
+  - **Screenshot**: 
+
+    ![Feature 4 Screenshot](./assets/media/ExperienceSection.png)
+
+#### Feature 5: Education Section (Coming Soon)
+- **Description**: Showcase my educational background such as my University, Major, and academic achievements.
+
+  - **Screenshot**: 
+
+      **Coming Soon** 
+
+#### Feature 6: Contact Form (Coming Soon) 
+- **Description**: This section will allow users to fill in any messages they would like to send me, a simple form in which a user can input their email and message. 
+
+  - **Screenshot**: 
+
+      **Coming Soon** 
+---
 
 ## 🛠️ Setting up the Development Environment
 
