@@ -20,21 +20,21 @@
 
 ## 🌟 Overview
 
-Welcome to my portfolio! My website aims to showcases my academic background, technical skills, industry experience, and the diverse projects I've undertaken. ***This website is still under construction*** it's being built with NodeJS, TailwindCSS, NPM, and Particles.js.
+Welcome to my portfolio! My Website aims to showcase my academic background, technical skills, industry experience, and the diverse projects I've undertaken. ***This Website is still under construction*** it's being built with NodeJS, TailwindCSS, NPM, and Particles.js.
 
 ---
 
 ## **Features and Demo**
 
 #### Feature 1: Landing Page
-- **Descripton**: Upon the user landing the gtihub and linkedin icons are animated in as well as the Particles.js dynamic background. Users can interact with these components as they wish. 
+- **Description**: Upon the user landing the GitHub and linkedin icons are animated in as well as the Particles.js dynamic background. Users can interact with these components as they wish. 
 
   - **Screenshot**: 
 
     ![Feature 1 Screenshot](./assets/media/HomePage.png)
 
 #### Feature 2: Project Section
-- **Description**: When the user scrolls down past the home section my projects are displayed. Each project is described along with a demo picture, the tools I used (frameworks, utilites, languages, etc.) 
+- **Description**: When the user scrolls down past the home section my projects are displayed. Each project is described along with a demo picture, the tools I used (frameworks, utilities, languages, etc.) 
 
   - **Screenshot**: 
   
@@ -69,7 +69,7 @@ Welcome to my portfolio! My website aims to showcases my academic background, te
       **Coming Soon** 
 ---
 
-## 🛠️ Setting up the Development Environment
+## 🛠️ Setting Up The Development Environment
 
 Feel free to clone the repository to take a look at the codebase! 
 
