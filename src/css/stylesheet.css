@@ -382,7 +382,10 @@ nav h4:hover {
     font-size: 30px;
     word-spacing: 20px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 /* .skills-icon {} */

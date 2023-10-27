@@ -1,29 +1,21 @@
-# [Personal Website](https://eduardonunez.dev) 
+# [My Personal Website](https://eduardonunez.dev)
 
-This portfolio showcases my journey as a Computer Science student at CSUF and the various projects I've been involved in.
+Welcome to my portfolio! My website aims to showcases my academic background, technical skills, industry experience, and the diverse projects I've undertaken. Dive in to explore!
 
-## Overview
+## 🚀 Features
+- **Navigation Bar**: Smooth transitions to different sections.
+- **Home**: A warm welcome with a quick introduction, my picture, and social media handles.
+- **Projects**: A highlight reel of my tech projects with crisp descriptions and tech stacks.
+- **Skills**: A palette of my technical arsenals, symbolized using icons.
+- **Experience**: A peek into my professional expeditions.
+- **Education**: A tour through my academic chronicles.
+- **Contact**: Connect with me!
 
-The project is built with TailwindCSS for styling and makes use of various other tools and scripts. It includes several sections, such as Home, Projects, Skills, Experience, Education, and Contact.
+## 🌙 Upcoming Features
+- **Dark Mode**: Customize your viewing experience with a light-dark mode switch.
 
+## 🖥️ Technical Overview
+- **Framework & Libraries**: TailwindCSS, JavaScript, and Node.js.
+- **Performance**: Prioritized fast loading and mobile optimization.
+- **Description**: My portfolio stands as a testament to my professional journey, displaying my background, skills, and the projects I've poured my heart into.
 
-## Features
-
-- **Navigation Bar**: A top navigation bar to easily jump to different sections of the portfolio.
-  
-- **Home**: Introduction with a profile image, brief intro text, and social media links.
-  
-- **Projects**: Showcases various projects I've worked on, including a brief description and the tech stack used.
-  
-- **Skills**: Displays various technical skills, represented with icons.
-  
-- **Experience**: A brief overview of my professional experience.
-  
-- **Education**: Provides details about my academic background.
-  
-- **Contact**: Details on how to get in touch with me.
-
-## Future Features
-
-- **Dark Mode**: Toggle button to switch the website between light and dark mode.
-  
