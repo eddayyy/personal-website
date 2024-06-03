@@ -1,6 +1,6 @@
 <div align="center">
-    <img width=45% src="./assets/media/HomePage.png">
-    <h1>Personal Website (Work In Progress) 🌐</h1>
+    <img width=45% src="./src/assets/media/Logo.png">
+    <h1>Personal Website 🌐</h1>
     <a href="https://eduardonunez.dev">
         <img alt="Status" src="https://img.shields.io/badge/Status-Live-brightgreen">
     </a>
@@ -20,6 +20,8 @@
 ## 🌟 Overview
 
 Welcome to my portfolio! My Website aims to showcase my academic background, technical skills, industry experience, and the diverse projects I've undertaken. My portfolio was built using ReactJS, JavaScript, CSS + Tailwind CSS, HTML, and Netlify.
+
+This repository serves as a proof of concept, demonstrating the core functionalities and overall architecture. Please note that the complete source code is hosted in a separate repository, and some important code is intentionally omitted here.
 
 The current site is [LIVE](https://eduardonunez.dev)
 
