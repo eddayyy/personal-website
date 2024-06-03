@@ -1,6 +1,6 @@
 <div align="center">
     <img width=45% src="./src/assets/media/Logo.png">
-    <h1>Personal Website 🌐</h1>
+    <h1>Portfolio Website 🌐</h1>
     <a href="https://eduardonunez.dev">
         <img alt="Status" src="https://img.shields.io/badge/Status-Live-brightgreen">
     </a>
